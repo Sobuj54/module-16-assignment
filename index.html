@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Legal Landing Page</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              buttoncolor: '#B68C5A',
+            },
+            fontFamily: {
+              poppins: ['Poppins', 'sans-serif'],
+              garamond: ['EB Garamond', 'serif'],
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body>
+    <header class="w-full lg:w-[1170px] mx-auto">
+      <!-- nav section -->
+      <nav class="lg:flex h-32 justify-between items-center">
+        <div class="px-14 lg:px-0">
+          <img src="images/logo2.png" alt="" />
+        </div>
+        <div class="px-14 lg:px-0 py-5 md:flex gap-8 font-poppins">
+          <div>Home</div>
+          <div>Services</div>
+          <div>Cases</div>
+          <div>Blog</div>
+          <div>Contact us</div>
+        </div>
+        <div class="px-14 lg:px-0">
+          <button
+            class="border rounded-lg text-white py-4 px-7 font-poppins bg-buttoncolor"
+          >
+            Free Consultation
+          </button>
+        </div>
+      </nav>
+      <!-- backgroud image with texts -->
+      <section
+        class="lg:width-[1170px] bg-[url('./images/banner.png')] bg-cover h-[550px] mt-6"
+      >
+        <div class="h-full max-w-2xl mx-auto pt-24">
+          <div class="font-garamond text-white">
+            <h1 class="text-7xl">We Provide Effective</h1>
+            <h1 class="text-7xl">Legal Solutions</h1>
+            <p class="text-base mt-6 font-poppins">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+
+            <div class="mt-8">
+              <input
+                class="py-5 pl-5 pr-44 border rounded-lg font-poppins"
+                type="text"
+                name=""
+                id=""
+                placeholder="Search your services"
+              />
+              <button
+                class="py-4 ml-6 px-10 bg-buttoncolor border border-transparent rounded-lg font-poppins text-xl"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
